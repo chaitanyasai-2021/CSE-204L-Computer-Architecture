@@ -6,28 +6,28 @@ Welcome to the **CSE 204L - Computer Organization and Architecture Lab** reposit
 
 This repository includes the following assembly language programs:
 
-1. [**Average of Numbers**](average.asm) 📊  
+1. [**Average of Numbers**](AVERAGE%20OF%20NUMBERS.asm) 📊  
    Calculate the average of a set of numbers.
 
-2. [**Copy Characters**](copy_chars.asm) ✍️  
+2. [**Copy Characters**](COPY%20CHARACTERS.asm) ✍️  
    Copy characters from one segment to another in memory.
 
-3. [**GCD Calculation**](gcd.asm) 🔢  
+3. [**GCD Calculation**](GCD.asm) 🔢  
    Compute the Greatest Common Divisor (GCD) of two numbers.
 
-4. [**Largest Number Finder**](largest_number.asm) 🔍  
+4. [**Largest Number Finder**](LARGEST%20NUMBER.asm) 🔍  
    Identify the largest number in an array.
 
-5. [**LCM Calculation**](lcm.asm) 📐  
+5. [**LCM Calculation**](LCM.asm) 📐  
    Compute the Least Common Multiple (LCM) of two numbers.
 
-6. [**Matching Characters**](matching_chars.asm) 🔎  
+6. [**Matching Characters**](MATCHING%20CHARACTERS.asm) 🔎  
    Check if characters match between two segments.
 
-7. [**Count Vowels**](vowel_count.asm) 🗣️  
+7. [**Count Vowels**](NO%20OF%20VOWELS.asm) 🗣️  
    Count the number of vowels in a given string.
 
-8. [**Print 0 to 9**](print_numbers.asm) 🔢  
+8. [**Print 0 to 9**](PRINTING%200%20TO%209.asm) 🔢  
    Print numbers from 0 to 9 sequentially.
 
 9. [**Sorting Array**](sorting.asm) 📈  
