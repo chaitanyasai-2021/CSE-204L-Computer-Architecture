@@ -1,0 +1,2 @@
+Week 7: Predictive parser
+8. Write a C program for the computation of FIRST and FOLLOW for a given CFG

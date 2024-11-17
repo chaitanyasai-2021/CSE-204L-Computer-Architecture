@@ -1,0 +1,67 @@
+%{
+#include <stdio.h>
+#include <string.h>
+
+#define MAX_IDENTIFIER_LENGTH 50
+#define MAX_CONSTANT_LENGTH 11 // Maximum integer constant length (10 digits + '\0')
+
+int line_number = 1; // For tracking line numbers
+%}
+
+/* Regular expressions for tokens */
+letter          [a-zA-Z]
+digit           [0-9]
+
+/* Token definitions */
+%%
+int             { printf("INT\n"); }
+"{"             { printf("LBRACE\n"); }
+"}"             { printf("RBRACE\n"); }
+";"             { printf("SEMICOLON\n"); }
+"="             { printf("ASSIGN\n"); }
+"("             { printf("LPAREN\n"); }
+")"             { printf("RPAREN\n"); }
+"["             { printf("LBRACKET\n"); }
+"]"             { printf("RBRACKET\n"); }
+"if"            { printf("IF\n"); }
+"then"          { printf("THEN\n"); }
+"else"          { printf("ELSE\n"); }
+"endif"         { printf("ENDIF\n"); }
+"while"         { printf("WHILE\n"); }
+"do"            { printf("DO\n"); }
+"enddo"         { printf("ENDDO\n"); }
+"print"         { printf("PRINT\n"); }
+{letter}{letter}* {
+    if (strlen(yytext) > MAX_IDENTIFIER_LENGTH) {
+        fprintf(stderr, "Error: Identifier too long at line %d\n", line_number);
+        exit(1);
+    }
+    printf("IDENTIFIER: %s\n", yytext);
+}
+
+{digit}+ {
+    if (strlen(yytext) > MAX_CONSTANT_LENGTH) {
+        fprintf(stderr, "Error: Integer constant too long at line %d\n", line_number);
+        exit(1);
+    }
+    printf("CONSTANT: %s\n", yytext);
+}
+
+"<"             { printf("RELOP: LT\n"); }
+"<="            { printf("RELOP: LE\n"); }
+"=="            { printf("RELOP: EQ\n"); }
+">="            { printf("RELOP: GE\n"); }
+">"             { printf("RELOP: GT\n"); }
+"!="            { printf("RELOP: NE\n"); }
+"-"             { printf("ADDOP: SUB\n"); }
+"+"             { printf("ADDOP: ADD\n"); }
+"*"             { printf("MULOP: MUL\n"); }
+"/"             { printf("MULOP: DIV\n"); }
+%%
+int main() {
+    yylex();
+    return 0;
+}
+int yywrap(){
+return 1;
+}

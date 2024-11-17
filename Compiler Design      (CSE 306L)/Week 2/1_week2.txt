@@ -1,0 +1,10 @@
+Week 2: Implementation of Lexical analyzer using C
+
+2. Implement lexical analyzer using C for recognizing the following tokens:
+
+a. A minimum of 10 keywords of your choice
+b. Identifiers with the regular expression : letter(letter | digit)*
+c. Integers with the regular expression: digit+
+d. Relational operators: &lt;, &gt;, &lt;=, &gt;=, ==, !=
+e. Storing identifiers in symbol table.
+f. Using files for input and output.

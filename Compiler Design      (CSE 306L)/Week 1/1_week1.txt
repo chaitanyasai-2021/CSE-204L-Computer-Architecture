@@ -1,0 +1,7 @@
+Week 1: Language recognizer
+
+1. Write a program in C that recognizes the following languages.
+
+a. Set of all strings over binary alphabet containing even number of 0’s and even
+number of 1’s.
+b. Lab Assignment: Set of all strings ending with two symbols of same type.

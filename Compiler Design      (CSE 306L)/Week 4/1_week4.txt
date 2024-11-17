@@ -1,0 +1,11 @@
+Week 4: Implementation of lexical analyzer using LEX
+
+4. Implement lexical analyzer using LEX for recognizing the following tokens:
+
+a. A minimum of 10 keywords of your choice
+b.  Identifiers with the regular expression : letter(letter | digit)*
+c. Integers with the regular expression: digit+
+d. Relational operators: &lt;, &gt;, &lt;=, &gt;=, ==, !=
+e. Ignores everything between multi line comments (/* …. */)
+f. Storing identifiers in symbol table
+g. Using files for input and output.

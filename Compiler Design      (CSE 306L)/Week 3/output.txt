@@ -1,0 +1,21 @@
+h - Consonant
+i - Vowel
+t - Consonant
+h - Consonant
+i - Vowel
+s - Consonant
+i - Vowel
+s - Consonant
+c - Consonant
+h - Consonant
+a - Vowel
+i - Vowel
+t - Consonant
+a - Vowel
+n - Consonant
+y - Consonant
+a - Vowel
++ - Consonant
+Number of Vowels - 7
+Number of Consonants - 11
+Number of Lines - 12260751

@@ -1,0 +1,21 @@
+Week 6: Recursive Descent Parser
+
+6. Implement Recursive Descent Parser for the Expression Grammar given below.
+
+E  TE’
+E’ +TE’ | ͼ
+T  FT’
+T’ *FT’ | ͼ
+F  (E) | i
+
+-----------------------------------------------------------------------------------------------------------
+
+7. Lab Assignment: Construct Recursive Descent Parser for the grammar
+
+G = ({S, L}, {(, ), a, ,}, {S  (L) | a ; L L, S | S}, S) and verify the acceptability of the
+following strings:
+
+i. (a,(a,a))
+ii. (a,((a,a),(a,a)))
+
+You can manually eliminate Left Recursion if any in the grammar.

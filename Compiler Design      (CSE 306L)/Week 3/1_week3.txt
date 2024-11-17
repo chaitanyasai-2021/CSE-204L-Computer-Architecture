@@ -1,0 +1,9 @@
+Week 3: Introduction to LEX tool:
+
+3. Implement the following programs using Lex tool:
+
+a. Identification of Vowels and Consonants
+b. count number of vowels and consonants
+c. Count the number of Lines in given input
+d. Recognize strings ending with 00
+e. Recognize a string with three consecutive 0’s
