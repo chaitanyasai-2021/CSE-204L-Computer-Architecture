@@ -1,3 +1,0 @@
-EmpName             EmpId     EmpDesig            EmpSalary      
-Chaitanya           123       Dev                 987            
-Chaitu              345       Design              876            
